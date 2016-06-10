@@ -1,13 +1,12 @@
 import React from 'react';
 
-
 export default React.createClass({
-	displayName: 'ArticlePost',
+	displayName: "About",
 
 	render() {
 		return (
-			<div className="post article-post">
-				{this.props.post.title.rendered}
+			<div className="page about">
+				<h1>About ReactWP</h1>
 			</div>
 		)
 	}
