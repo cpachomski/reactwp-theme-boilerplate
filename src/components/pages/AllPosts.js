@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ArticlePost from '../posts/ArticlePost.js';
+
 
 export default React.createClass({
 	displayName: 'AllPosts',
@@ -7,27 +9,25 @@ export default React.createClass({
 	getInitialState() {
 		return {
 			allPosts: [],
-			loading: false
+			loading: true
 		}
 	},
 
 	fetchAllPosts() {
-		console.log('fetching posts...');
 		var req = new XMLHttpRequest();
-
-		this.setState({
-			loading: true,
-		})
 
 		req.onreadystatechange = function() {
 			if (req.readyState == 4 && req.status == 200) {
 				this.setState({
-					allPosts: req.responseText
+					allPosts: JSON.parse(req.responseText)
 				});
+				this.setState({
+					loading: false
+				})
 			} 
 		}.bind(this)
 
-		req.open('GET', 'http://dev.reactwp.com/wp-json/wp/v2/posts');
+		req.open('GET', 'http://dev.reactwp.com/wp-json/wp/v2/posts?filter[posts_per_page]=-1');
 		req.send();
 	},
 
@@ -37,11 +37,19 @@ export default React.createClass({
 
 	render() {
 		console.log(this.state)
+		
+		let loading = this.state.loading ? <div className="loading">Loading...</div> : ''
+
+
 		return (
 			<div className="container page all-posts">
 				<h1> All Posts </h1>
-
-					{this.state.allPosts}
+				{loading}
+				{this.state.allPosts.map((post) => {
+					return (
+						<ArticlePost post={post} key={post.id} />
+					)
+				})}
 			</div>
 		)
 	}
