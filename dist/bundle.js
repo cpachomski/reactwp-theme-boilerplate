@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1d3f1916e083a7ee5344"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a03437e88207bcd7f5b8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -8155,7 +8155,7 @@
 /* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {module.hot&&!function(){var e=__webpack_require__(77),t=__webpack_require__(85),o=__webpack_require__(87),r=__webpack_require__(139);module.makeHot=module.hot.data?module.hot.data.makeHot:e(function(){return t.getRootInstances(o)},r)}();try{(function(){"use strict";function e(e){return e&&e.__esModule?e:{"default":e}}var t=__webpack_require__(139),o=e(t),r=__webpack_require__(243),a=e(r),s=__webpack_require__(244);e(s);__webpack_require__(262);var u=__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/ItemList\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())),n=e(u),c=document.getElementById("root");a["default"].render(o["default"].createElement(n["default"],null),c)}).call(this)}finally{module.hot&&!function(){var e=module.hot.data&&module.hot.data.foundReactClasses||!1;if(module.exports&&module.makeHot){var t=__webpack_require__(266);t(module,__webpack_require__(139))&&(e=!0);var o=e;o&&module.hot.accept(function(e){e&&console.error("Cannot not apply hot update to index.js: "+e.message)})}module.hot.dispose(function(t){t.makeHot=module.makeHot,t.foundReactClasses=e})}()}
+	/* WEBPACK VAR INJECTION */(function(module) {module.hot&&!function(){var e=__webpack_require__(77),t=__webpack_require__(85),o=__webpack_require__(87),r=__webpack_require__(139);module.makeHot=module.hot.data?module.hot.data.makeHot:e(function(){return t.getRootInstances(o)},r)}();try{(function(){"use strict";function e(e){return e&&e.__esModule?e:{"default":e}}var t=__webpack_require__(139),o=e(t),r=__webpack_require__(243),a=e(r),s=__webpack_require__(244);e(s);__webpack_require__(262);var u=__webpack_require__(266),n=e(u),c=document.getElementById("root");a["default"].render(o["default"].createElement(n["default"],null),c)}).call(this)}finally{module.hot&&!function(){var e=module.hot.data&&module.hot.data.foundReactClasses||!1;if(module.exports&&module.makeHot){var t=__webpack_require__(270);t(module,__webpack_require__(139))&&(e=!0);var o=e;o&&module.hot.accept(function(e){e&&console.error("Cannot not apply hot update to index.js: "+e.message)})}module.hot.dispose(function(t){t.makeHot=module.makeHot,t.foundReactClasses=e})}()}
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
 
 /***/ },
@@ -29610,10 +29610,64 @@
 /* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/* WEBPACK VAR INJECTION */(function(module) {module.hot&&!function(){var e=__webpack_require__(77),t=__webpack_require__(85),o=__webpack_require__(87),r=__webpack_require__(139);module.makeHot=module.hot.data?module.hot.data.makeHot:e(function(){return t.getRootInstances(o)},r)}();try{(function(){"use strict";function e(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(exports,"__esModule",{value:!0});var t=__webpack_require__(139),o=e(t),r=__webpack_require__(267),a=e(r),s=__webpack_require__(273),u=e(s);exports["default"]=o["default"].createClass({displayName:"Item List",getInitialState:function(){return{itemList:u["default"]}},render:function(){return console.log(this.state.itemList),o["default"].createElement("div",{className:"row"},o["default"].createElement("div",{className:"small-4 columns"},this.state.itemList.map(function(e){return o["default"].createElement(a["default"],{item:e,key:e._id})})))}}),module.exports=exports["default"]}).call(this)}finally{module.hot&&!function(){var e=module.hot.data&&module.hot.data.foundReactClasses||!1;if(module.exports&&module.makeHot){var t=__webpack_require__(270);t(module,__webpack_require__(139))&&(e=!0);var o=e;o&&module.hot.accept(function(e){e&&console.error("Cannot not apply hot update to ItemList.js: "+e.message)})}module.hot.dispose(function(t){t.makeHot=module.makeHot,t.foundReactClasses=e})}()}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {module.hot&&!function(){var e=__webpack_require__(77),t=__webpack_require__(85),r=__webpack_require__(87),o=__webpack_require__(139);module.makeHot=module.hot.data?module.hot.data.makeHot:e(function(){return t.getRootInstances(r)},o)}();try{(function(){"use strict";function e(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(exports,"__esModule",{value:!0});var t=__webpack_require__(139),r=e(t);__webpack_require__(268),exports["default"]=r["default"].createClass({displayName:"Item",render:function(){return r["default"].createElement("div",{className:"item-wrapper"},r["default"].createElement("div",{className:"img-wrapper"},r["default"].createElement("a",{href:"#"},r["default"].createElement("img",{src:this.props.item.picture}))),r["default"].createElement("a",{href:"#"},r["default"].createElement("h3",null,this.props.item.name.first," ",this.props.item.name.last)),r["default"].createElement("p",null,"eye color: ",this.props.item.eyeColor))}}),module.exports=exports["default"]}).call(this)}finally{module.hot&&!function(){var e=module.hot.data&&module.hot.data.foundReactClasses||!1;if(module.exports&&module.makeHot){var t=__webpack_require__(270);t(module,__webpack_require__(139))&&(e=!0);var r=e;r&&module.hot.accept(function(e){e&&console.error("Cannot not apply hot update to Item.js: "+e.message)})}module.hot.dispose(function(t){t.makeHot=module.makeHot,t.foundReactClasses=e})}()}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(269);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(265)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(269, function() {
+				var newContent = __webpack_require__(269);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(264)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".item-wrapper {\n  padding: 20px;\n  border: 2px solid #efefef;\n  border-radius: 7px;\n  margin-top: 40px;\n  max-width: 400px; }\n  .item-wrapper:hover .img-wrapper img {\n    -webkit-filter: grayscale(0); }\n  .item-wrapper:hover .img-wrapper .add-to-cart {\n    bottom: 0; }\n\n.img-wrapper {\n  margin-bottom: 20px;\n  position: relative;\n  overflow: hidden; }\n  .img-wrapper .add-to-cart {\n    -webkit-transition: all 0.2s ease;\n    transition: all 0.2s ease;\n    background-color: #333;\n    padding: 16px 8px;\n    bottom: -50px;\n    position: absolute;\n    z-index: 2;\n    color: #fff;\n    margin: 0 auto;\n    border: none;\n    box-shadow: none; }\n    .img-wrapper .add-to-cart:hover {\n      background-color: #008cba; }\n  .img-wrapper img {\n    -webkit-transition: all 0.2s ease;\n    transition: all 0.2s ease;\n    -webkit-filter: grayscale(1);\n    width: 100%; }\n\nh3 {\n  font-size: 22px; }\n\nh5 {\n  font-weight: bold; }\n\np {\n  color: #888;\n  font-size: 13px;\n  margin-bottom: 0; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 	
-	var isReactClassish = __webpack_require__(267),
-	    isReactElementish = __webpack_require__(268);
+	var isReactClassish = __webpack_require__(271),
+	    isReactElementish = __webpack_require__(272);
 	
 	function makeExportsHot(m, React) {
 	  if (isReactElementish(m.exports, React)) {
@@ -29667,7 +29721,7 @@
 
 
 /***/ },
-/* 267 */
+/* 271 */
 /***/ function(module, exports) {
 
 	function hasRender(Class) {
@@ -29717,10 +29771,10 @@
 	module.exports = isReactClassish;
 
 /***/ },
-/* 268 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isReactClassish = __webpack_require__(267);
+	var isReactClassish = __webpack_require__(271);
 	
 	function isReactElementish(obj, React) {
 	  if (!obj) {
@@ -29732,6 +29786,13 @@
 	}
 	
 	module.exports = isReactElementish;
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {module.hot&&!function(){var e=__webpack_require__(77),t=__webpack_require__(85),o=__webpack_require__(87),a=__webpack_require__(139);module.makeHot=module.hot.data?module.hot.data.makeHot:e(function(){return t.getRootInstances(o)},a)}();try{(function(){"use strict";module.exports=[{_id:"5759be19c20c145ea60d7967",index:0,isActive:!0,picture:"http://placehold.it/400x400",age:33,eyeColor:"brown",name:{first:"Viola",last:"Tanner"}},{_id:"5759be19f95d9b7dda1136b7",index:1,isActive:!1,picture:"http://placehold.it/400x400",age:26,eyeColor:"green",name:{first:"Jerry",last:"Holder"}},{_id:"5759be19d9e6a87c937362dd",index:2,isActive:!0,picture:"http://placehold.it/400x400",age:40,eyeColor:"brown",name:{first:"Pittman",last:"Weeks"}},{_id:"5759be191cfd0ee099e68afd",index:3,isActive:!0,picture:"http://placehold.it/400x400",age:27,eyeColor:"brown",name:{first:"Ramos",last:"Reed"}},{_id:"5759be19a69a7fa200dfefdf",index:4,isActive:!0,picture:"http://placehold.it/400x400",age:23,eyeColor:"blue",name:{first:"Holly",last:"Koch"}},{_id:"5759be19db9082f861e3ae75",index:5,isActive:!1,picture:"http://placehold.it/400x400",age:40,eyeColor:"blue",name:{first:"Fry",last:"Wall"}},{_id:"5759be196078c6229100abee",index:6,isActive:!0,picture:"http://placehold.it/400x400",age:22,eyeColor:"brown",name:{first:"Pat",last:"Knight"}},{_id:"5759be19ef3aa42e12d88313",index:7,isActive:!1,picture:"http://placehold.it/400x400",age:39,eyeColor:"green",name:{first:"Juarez",last:"Mcleod"}},{_id:"5759be1951ece991e7292c07",index:8,isActive:!0,picture:"http://placehold.it/400x400",age:26,eyeColor:"brown",name:{first:"Wilcox",last:"Colon"}}]}).call(this)}finally{module.hot&&!function(){var e=module.hot.data&&module.hot.data.foundReactClasses||!1;if(module.exports&&module.makeHot){var t=__webpack_require__(270);t(module,__webpack_require__(139))&&(e=!0);var o=e;o&&module.hot.accept(function(e){e&&console.error("Cannot not apply hot update to seed.js: "+e.message)})}module.hot.dispose(function(t){t.makeHot=module.makeHot,t.foundReactClasses=e})}()}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
 
 /***/ }
 /******/ ]);

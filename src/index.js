@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
-import './styles/foundation.min.scss';
+import './styles/scss/bootstrap.scss';
+import './styles/normalize.scss';
 
-import ItemList from './components/Items/ItemList'
+
+import AllPosts from './components/pages/AllPosts';
+
 
 let rootEl = document.getElementById('root');
 
-ReactDOM.render(<ItemList />, rootEl);
+ReactDOM.render(<AllPosts />, rootEl);
