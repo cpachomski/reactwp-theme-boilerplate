@@ -16,10 +16,10 @@ export default React.createClass({
 		console.log(this.state.itemList)
 		return (
 			<div className='row'>
-				<div class='small-4 columns'>
+				<div className='small-4 columns'>
 					{this.state.itemList.map((item) => {
 						return (
-							<Item item={item} />
+							<Item item={item} key={item._id} />
 						)
 					})}
 				</div>
