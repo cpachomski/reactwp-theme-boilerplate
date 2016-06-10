@@ -4,7 +4,6 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 import './styles/scss/bootstrap.scss';
 import './styles/normalize.scss';
 
-
 import AllPosts from './components/pages/AllPosts';
 
 
