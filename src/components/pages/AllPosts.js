@@ -9,40 +9,49 @@ export default React.createClass({
 	getInitialState() {
 		return {
 			allPosts: [],
+			postOffset: 0,
+			postsPulled: 10,
 			loading: true
 		}
 	},
 
-	fetchAllPosts() {
+	fetchPosts() {
 		var req = new XMLHttpRequest();
 
 		req.onreadystatechange = function() {
 			if (req.readyState == 4 && req.status == 200) {
 				this.setState({
-					allPosts: JSON.parse(req.responseText)
+					allPosts: this.state.allPosts.concat(JSON.parse(req.responseText))
 				});
 				this.setState({
 					loading: false
 				})
-			} 
+			}
 		}.bind(this)
 
-		req.open('GET', 'http://dev.reactwp.com/wp-json/wp/v2/posts?filter[posts_per_page]=-1');
+		req.open('GET', 'http://dev.reactwp.com/wp-json/wp/v2/posts?filter[posts_per_page]=' + this.state.postsPulled + '&offset=' + this.state.postOffset );
 		req.send();
 	},
 
+	fetchNextPosts() {
+		this.setState({
+			postOffset: this.state.postOffset + this.state.postsPulled
+		}, () => {
+			this.fetchPosts();
+		})
+	},
+
 	componentWillMount() {
-		this.fetchAllPosts();
+		this.fetchPosts();
 	},
 
 	render() {
 		console.log(this.state)
-		
+
 		let loading = this.state.loading ? <div className="loading">Loading...</div> : ''
 
-
 		return (
-			<div className="container page all-posts">
+			<div className=" page all-posts">
 				<h1> All Posts </h1>
 				{loading}
 				{this.state.allPosts.map((post) => {
@@ -50,6 +59,7 @@ export default React.createClass({
 						<ArticlePost post={post} key={post.id} />
 					)
 				})}
+				<button className='btn btn-primary' onClick={this.fetchNextPosts}>More</button>
 			</div>
 		)
 	}
