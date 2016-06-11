@@ -46,10 +46,7 @@ export default React.createClass({
 	},
 
 	render() {
-		console.log(this.state)
-
 		let loading = this.state.loading ? <div className="loading">Loading...</div> : ''
-
 		return (
 			<div className=" page all-posts">
 				<h1> All Posts </h1>

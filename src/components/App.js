@@ -28,7 +28,7 @@ const Nav = React.createClass({
 
   getInitialState() {
     return {
-      navItems: ['/home','/blog', 'about']
+      navItems: ['/home','/blog', '/about']
     }
   },
   render() {
