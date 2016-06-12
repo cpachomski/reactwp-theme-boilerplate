@@ -18,7 +18,7 @@ export default React.createClass({
 	fetchPosts() {
 		var req = new XMLHttpRequest();
 
-		req.onreadystatechange = function() {
+		req.onreadystatechange = () => {
 			if (req.readyState == 4 && req.status == 200) {
 				this.setState({
 					allPosts: this.state.allPosts.concat(JSON.parse(req.responseText))
@@ -27,7 +27,7 @@ export default React.createClass({
 					loading: false
 				})
 			}
-		}.bind(this)
+		}
 
 		req.open('GET', 'http://dev.reactwp.com/wp-json/wp/v2/posts?filter[posts_per_page]=' + this.state.postsPulled + '&offset=' + this.state.postOffset );
 		req.send();
@@ -41,15 +41,17 @@ export default React.createClass({
 		})
 	},
 
-	componentWillMount() {
+	componentDidMount() {
 		this.fetchPosts();
 	},
 
 	render() {
 		let loading = this.state.loading ? <div className="loading">Loading...</div> : ''
 		return (
-			<div className=" page all-posts">
-				<h1> All Posts </h1>
+			<div className="all-posts">
+				<div className='all-posts--header'>
+					<h1> All Posts </h1>
+				</div>
 				{loading}
 				{this.state.allPosts.map((post) => {
 					return (

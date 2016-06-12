@@ -1,15 +1,29 @@
+
+
+
+
 nav {
   min-width: 300px;
-  background-color: $dark-grey;
+  background-color: $blue;
   position: fixed;
   top: 0px;
   left: 0px;
   bottom: 0px;
+  padding: 15px;
+
 
   > a.navbar-logo {
-    color: #FFF;
+    color: #000;
     display: block;
+    > i {
+      font-size: 100px;
+    }
     margin-top: 50px;
+    text-align: center;
+  }
+
+
+  h1 {
     text-align: center;
   }
 

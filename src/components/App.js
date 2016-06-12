@@ -15,7 +15,10 @@ const Header = React.createClass({
   render() {
     return (
       <nav>
-        <a className='navbar-logo' href='/'><h1>ReactWP</h1></a>
+        <a className='navbar-logo' href='/'>
+          <i className="fa fa-camera-retro" aria-hidden="true"></i>
+        </a>
+        <h1>ReactWP</h1>
           <Nav />
       </nav>
     )
