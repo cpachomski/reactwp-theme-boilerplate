@@ -1,0 +1,31 @@
+#hero-module {
+	position: relative;
+	top: 0px;
+	padding: 100px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	min-height: 700px;
+}
+
+#hero-module .text-block {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	text-align: center;
+	max-width: 600px;
+	color: white;
+}
+
+
+#hero-module .text-block h2 {
+	margin-bottom: 50px;
+	font-size: 50px;
+}
+

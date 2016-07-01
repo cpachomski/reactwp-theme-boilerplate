@@ -14,15 +14,6 @@ module.exports = {
 		filename: 'bundle.js',
 		publicPath: '/'
 	},
-	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		new HtmlWebpackPlugin({
-			filename: 'index.html',
-			template: './src/index.template.html',
-			inject: true
-		})
-	],
-
 	module: {
 	    loaders: [
 	      {

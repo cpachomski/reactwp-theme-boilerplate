@@ -1,0 +1,136 @@
+
+#services-module h3{
+	font-size: 46px;
+	letter-spacing: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.services {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto 3em;
+}
+
+.service {
+	min-width: 300px;
+	position: relative;
+	margin: 1em;
+	border: 2px solid #333;
+	text-align: center;
+	color: #333 !important;
+	-webkit-flex: 0 1 300px;
+	flex: 0 1 300px;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+}
+
+.service h4 {
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 3px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid #333;
+}
+
+
+.service .price-box {
+	max-width: 200px;
+	margin: 0 auto;
+	border: 2px solid #333;
+}
+
+.service .price-box .price-blurb {
+	border-bottom: 2px solid #333;
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+
+.service .price-box .price {
+	padding: 30px 10px;
+}
+
+.service .price-box .price span {	
+	font-size: 50px;
+	position: relative;
+}
+
+.service .price-box .price span:before,
+.service .price-box .price span:after {
+	position: absolute;
+	color: #666;
+}
+
+.service .price-box .price span:before {
+	content: '$';
+	left: -17px;
+	top: 11px;
+	font-size: 30px;
+}
+
+.service .price-box .price span:after {
+	content: '/ hr';
+	right: -31px;
+	bottom: 14px;
+	font-size: 20px;
+}
+
+
+.service ul.service-offerings {
+	padding: 15px 10px 15px 75px;
+	max-width: 200px;
+	margin: 15px auto 100px;
+}
+
+
+.service ul.service-offerings > li {
+	text-align: left;
+	padding-left: 25px;
+}
+
+
+.service > a {
+	position: absolute;
+	width: 100px;
+	left: 50%;
+	bottom: 0px;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	padding: 15px 50px;
+	color: white;
+	background-color: #333;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-bottom: 25px;
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+
+.service > a:hover,
+.service > a:focus,
+.service > a:active {
+	width: 150px;
+	background-color: black
+}
+
+
+
+
+
+
+
